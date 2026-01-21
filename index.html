@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Calculator - MG Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <svg class="logo" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
+            <text x="50" y="200" font-family="Arial, sans-serif" font-size="120" font-weight="bold" fill="white">MG</text>
+            <text x="300" y="140" font-family="Arial, sans-serif" font-size="80" font-weight="bold" fill="white">MG Digital</text>
+            <text x="300" y="210" font-family="Arial, sans-serif" font-size="40" fill="white">Marketing Agency</text>
+        </svg>
+        <h1>Social Media Price Calculator</h1>
+        <p>Calculate your service costs easily</p>
+    </div>
+
+    <div class="calculator-body">
+
+        <div class="form-group">
+            <label>Service Type</label>
+            <select id="serviceType">
+                <option value="">Choose Service Type</option>
+                <option value="management">Social Media Management</option>
+                <option value="creation">Social Media Creation</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Channels</label>
+            <div class="channels-container">
+                <div class="channel-item">
+                    <input type="checkbox" id="facebook" value="facebook">
+                    <label for="facebook">Facebook</label>
+                </div>
+                <div class="channel-item">
+                    <input type="checkbox" id="instagram" value="instagram">
+                    <label for="instagram">Instagram</label>
+                </div>
+                <div class="channel-item">
+                    <input type="checkbox" id="linkedin" value="linkedin">
+                    <label for="linkedin">LinkedIn</label>
+                </div>
+                <div class="channel-item">
+                    <input type="checkbox" id="twitter" value="twitter">
+                    <label for="twitter">Twitter/X</label>
+                </div>
+                <div class="channel-item">
+                    <input type="checkbox" id="tiktok" value="tiktok">
+                    <label for="tiktok">TikTok</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="posts-section" id="postsSection">
+            <div class="form-group">
+                <label>Posts</label>
+                <div id="postsContainer"></div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Reels</label>
+            <div class="reels-options" id="reelsOptions">
+                <div class="reel-option">
+                    <input type="checkbox" id="photographer">
+                    <label for="photographer">Photographer</label>
+                    <input type="number" id="photographerCount" min="0" value="0">
+                </div>
+                <div class="reel-option">
+                    <input type="checkbox" id="ai">
+                    <label for="ai">AI</label>
+                    <input type="number" id="aiCount" min="0" value="0">
+                </div>
+                <div class="reel-option">
+                    <input type="checkbox" id="videoEdit">
+                    <label for="videoEdit">Video Edit</label>
+                    <input type="number" id="videoEditCount" min="0" value="0">
+                </div>
+                <div class="reel-option">
+                    <input type="checkbox" id="fromPost">
+                    <label for="fromPost">From Post</label>
+                    <input type="number" id="fromPostCount" min="0" value="0">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Carousel Standard</label>
+            <div class="carousel-section" id="carouselSection">
+                <div class="carousel-inputs">
+                    <div>
+                        <label>Number of Carousels</label>
+                        <input type="number" id="carouselCount" min="0" value="0">
+                    </div>
+                    <div>
+                        <label>Slides per Carousel</label>
+                        <input type="number" id="slidesPerCarousel" min="1" value="5">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="total-section">
+            <h2>Total</h2>
+            <div class="total-amount" id="totalAmount">0 EGP</div>
+            <p class="estimated-note">* Prices are estimated</p>
+        </div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+.header {
+    background: linear-gradient(135deg, #4A90E2 0%, #357ABD 100%);
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+.logo { max-width: 300px; margin-bottom: 15px; }
+
+.calculator-body { padding: 40px; }
+
+.form-group { margin-bottom: 30px; }
+
+select, input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+.channels-container { display: flex; flex-wrap: wrap; gap: 10px; }
+
+.posts-section, .reels-options, .carousel-section { display: none; }
+
+.total-section {
+    margin-top: 40px;
+    padding: 25px;
+    background: linear-gradient(135deg, #4A90E2 0%, #357ABD 100%);
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+}
